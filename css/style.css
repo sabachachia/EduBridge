@@ -1,5 +1,132 @@
 .container{
-    width: min(100%,1440px);
+    width: min(100%,1980px);
     margin: auto;
 }
 /* header */
+header{
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #013662;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+}
+.header_ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav{
+    width: 40%;
+
+}
+.header_list{
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    text-shadow: 6px 3px 4px  #000000;
+     position: relative; 
+}
+.header_list:hover{
+    font-size: 30px;
+    text-shadow: 6px 3px 4px  #000000;
+}
+.header_list::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    box-shadow: 6px 3px 4px  #000000;
+    margin-top: 5px; 
+    border-radius: 3px;
+    transition: 0.4s;
+}
+.header_list:hover::after {
+    width: 100%; 
+}
+.fa-user{
+    font-size: 30px;
+    color: white;
+    text-shadow: 6px 3px 4px  #000000;
+    transition: 0.3s;
+
+}
+.fa-user:hover{
+     font-size: 50px;
+}
+/* main */
+.main{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+footer{
+    display: flex;
+    padding-block: 64px;
+    column-gap: 257px;
+    background-color: #013662;
+    justify-content: center;
+}
+.footer_sec_left,
+.footer_sec_mid,
+.footer_sec_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+}
+h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #DEE2EB;
+    text-shadow: 5px 3px 4px  #000000;
+
+}
+.footer_ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: center;
+}
+.footer_soc_ul{
+    display: flex;
+    column-gap: 16px;
+}
+.footer_li{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #DEE2EB;
+    text-shadow: 6px 3px 4px  #000000;
+
+}
+.contact_txt{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #D9D9D9;
+    text-shadow: 6px 3px 4px  #000000;
+
+}
+.fa-brands{
+    font-size: 24px;
+    color: #D9D9D9;
+    text-shadow: 4px 3px 5px  #000000;
+
+}
